@@ -1,12 +1,11 @@
 #include<stdio.h>
 int main(void)
 {
-  int a,b,temp;
-  scanf("%d %d",&a,&b);
-  temp=a;
-  a=b;
-  b=temp;
-  printf("%d %d",a,b);
-  
+  int x,y,temp;
+  scanf("%d %d",&x,&y);
+  temp=x;
+  a=y;
+  y=temp;
+  printf("%d %d",x,y);
 return 0;
 }
