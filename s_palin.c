@@ -2,21 +2,21 @@
 #include<string.h>
 int main(void)
 {
-char a[100];
-int i,j,flag=0;
+char s[100];
+int i,j,count=0;
 printf("Enter the string:");
-scanf("%s",&a);
+scanf("%s",&s);
 i=0;
-j=strlen(a)-1;
+j=strlen(s)-1;
 while(j>1)
 {
-    if(a[i++]!=a[j--])
+    if(s[i++]!=s[j--])
     {
-        flag=1;
+        count=1;
         break;
     }
 }
-if(flag==1)
+if(count==1)
 {
     printf("The given string is not palindrome");
 }
