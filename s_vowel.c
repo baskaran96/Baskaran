@@ -2,23 +2,23 @@
 #include<string.h>
 int main(void)
 {
-char a[100],b[5]={'a','e','i','o','u'};
-int i,j,flag=0,n;
+char s[100],b[5]={'a','e','i','o','u'};
+int i,j,count=0,n;
 printf("Enter the string:");
-scanf("%s",&a);
-n=strlen(a);
+scanf("%s",&s);
+n=strlen(s);
 for(i=0;i<n;i++)
 {
     for(j=0;j<5;j++)
     {
         if(a[i]==b[j])
         {
-            flag=1;
+            count=1;
             break;
         }
     }
 }
-if(flag==1)
+if(count==1)
 {
     printf("Yes");
 }
